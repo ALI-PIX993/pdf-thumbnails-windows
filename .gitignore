@@ -1,0 +1,6 @@
+/build/
+/dist/
+/target/
+*.dll
+*.zip
+!/third-party-licenses.zip

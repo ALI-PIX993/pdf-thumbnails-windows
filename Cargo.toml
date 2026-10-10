@@ -1,0 +1,26 @@
+[package]
+name = "pdfcraft-thumbnail"
+description = "Windows Explorer first-page PDF thumbnails"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "lib.rs"
+name = "pdfcraft_thumbnail"
+crate-type = ["cdylib", "rlib"]
+
+# The user explicitly approved the COM ABI exception on 2026-10-10.
+# Only the Windows module may override this deny; all rendering stays safe.
+[lints.rust]
+unsafe_code = "deny"
+
+[dependencies]
+pdfcraft-render.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows-core = "0.62"
+windows = { version = "0.62", features = ["Win32_Foundation", "Win32_Graphics_Gdi", "Win32_System_Com", "Win32_System_Com_StructuredStorage", "Win32_UI_Shell", "Win32_UI_Shell_PropertiesSystem"] }
+
+[dev-dependencies]
+lopdf.workspace = true

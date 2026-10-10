@@ -1,0 +1,19 @@
+PDF thumbnails for Windows
+Independent Windows Explorer thumbnail provider, using the PDFCraft renderer.
+Project license: MIT OR Apache-2.0.
+
+PDFCraft: copyright (c) 2026 ArtCraft Team and the PDFCraft contributors.
+Source: https://github.com/storytold/pdfcraft
+Pinned revision: 5d590604867fdac7ed71c555c40477ae3331a60a
+Upstream LICENSE-MIT and LICENSE-APACHE are retained in this repository.
+No ArtCraft logos or GUI assets are distributed by this project.
+
+Renderer dependencies include hayro (MIT OR Apache-2.0), lopdf (MIT),
+Foxit substitute fonts (BSD-3-Clause, copyright 2014 PDFium Authors),
+Adobe CMap technical data (BSD-3-Clause, copyright 1990-2023 Adobe), and
+CGATS color profile data (CC0-1.0). These materials retain their own licenses.
+Build inputs retain the pinned upstream NOTICE, ATTRIBUTION.toml,
+ATTRIBUTION.md, and vendor license files. Prebuilt archives include notices
+and third-party license texts alongside the DLL.
+
+Neither ArtCraft, Adobe, Microsoft, nor other named projects endorse this add-on.
